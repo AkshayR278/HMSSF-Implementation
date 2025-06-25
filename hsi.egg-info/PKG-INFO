@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: hsi
+Version: 0.1
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Dynamic: requires-dist
