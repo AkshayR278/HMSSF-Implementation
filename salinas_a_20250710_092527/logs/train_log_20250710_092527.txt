@@ -1,0 +1,326 @@
+2025-07-10 09:25:28,815 - INFO - Using device: cuda
+2025-07-10 09:25:28,817 - INFO - Loading salinas_a dataset...
+2025-07-10 09:25:28,843 - INFO - Raw data shape: (83, 86, 83), Labels shape: (83, 86)
+2025-07-10 09:25:28,844 - INFO - Label range: 0-14
+2025-07-10 09:25:28,844 - INFO - Unique labels: [ 0  1 10 11 12 13 14]
+2025-07-10 09:25:28,845 - INFO - Applying PCA...
+2025-07-10 09:25:28,876 - INFO - Data shape after PCA: (83, 86, 30)
+2025-07-10 09:25:28,876 - INFO - Extracting patches...
+2025-07-10 09:25:29,069 - INFO - Label mapping: {np.uint8(1): 0, np.uint8(10): 1, np.uint8(11): 2, np.uint8(12): 3, np.uint8(13): 4, np.uint8(14): 5}
+2025-07-10 09:25:29,077 - INFO - Original labels in dataset: [ 0  1 10 11 12 13 14]
+2025-07-10 09:25:29,078 - INFO - Valid labels (excluding background): [ 1 10 11 12 13 14]
+2025-07-10 09:25:29,079 - INFO - Number of classes: 6
+2025-07-10 09:25:31,016 - INFO - Starting training...
+2025-07-10 09:25:31,019 - INFO - Training batch shape: torch.Size([32, 30, 15, 15]), Labels shape: torch.Size([32])
+2025-07-10 09:25:31,381 - INFO - Model output shape (before mean): torch.Size([32, 6])
+2025-07-10 09:25:31,381 - INFO - Model output shape (after mean): torch.Size([32, 6])
+2025-07-10 09:25:31,382 - INFO - Target shape: torch.Size([32])
+2025-07-10 09:25:53,937 - INFO - Epoch 1/100:
+2025-07-10 09:25:53,938 - INFO - Training Loss: 0.6528, Accuracy: 0.7789
+2025-07-10 09:25:53,938 - INFO - Validation - OA: 0.9364, AA: 0.9491, Kappa: 0.9209
+2025-07-10 09:25:53,955 - INFO - Best model saved!
+2025-07-10 09:26:19,950 - INFO - Epoch 2/100:
+2025-07-10 09:26:19,951 - INFO - Training Loss: 0.1989, Accuracy: 0.9381
+2025-07-10 09:26:19,951 - INFO - Validation - OA: 0.8617, AA: 0.8205, Kappa: 0.8256
+2025-07-10 09:26:52,865 - INFO - Epoch 3/100:
+2025-07-10 09:26:52,867 - INFO - Training Loss: 0.1494, Accuracy: 0.9476
+2025-07-10 09:26:52,869 - INFO - Validation - OA: 0.9495, AA: 0.9481, Kappa: 0.9368
+2025-07-10 09:26:53,068 - INFO - Best model saved!
+2025-07-10 09:27:23,447 - INFO - Epoch 4/100:
+2025-07-10 09:27:23,448 - INFO - Training Loss: 0.0857, Accuracy: 0.9752
+2025-07-10 09:27:23,448 - INFO - Validation - OA: 0.9804, AA: 0.9793, Kappa: 0.9754
+2025-07-10 09:27:23,548 - INFO - Best model saved!
+2025-07-10 09:27:48,353 - INFO - Epoch 5/100:
+2025-07-10 09:27:48,355 - INFO - Training Loss: 0.0839, Accuracy: 0.9750
+2025-07-10 09:27:48,356 - INFO - Validation - OA: 0.9869, AA: 0.9853, Kappa: 0.9836
+2025-07-10 09:27:48,520 - INFO - Best model saved!
+2025-07-10 09:28:08,406 - INFO - Epoch 6/100:
+2025-07-10 09:28:08,407 - INFO - Training Loss: 0.0699, Accuracy: 0.9790
+2025-07-10 09:28:08,408 - INFO - Validation - OA: 0.9916, AA: 0.9938, Kappa: 0.9895
+2025-07-10 09:28:08,434 - INFO - Best model saved!
+2025-07-10 09:28:24,424 - INFO - Epoch 7/100:
+2025-07-10 09:28:24,425 - INFO - Training Loss: 0.0391, Accuracy: 0.9902
+2025-07-10 09:28:24,426 - INFO - Validation - OA: 0.9991, AA: 0.9994, Kappa: 0.9988
+2025-07-10 09:28:24,472 - INFO - Best model saved!
+2025-07-10 09:28:41,655 - INFO - Epoch 8/100:
+2025-07-10 09:28:41,657 - INFO - Training Loss: 0.0402, Accuracy: 0.9874
+2025-07-10 09:28:41,658 - INFO - Validation - OA: 0.9682, AA: 0.9654, Kappa: 0.9602
+2025-07-10 09:28:59,182 - INFO - Epoch 9/100:
+2025-07-10 09:28:59,183 - INFO - Training Loss: 0.0537, Accuracy: 0.9841
+2025-07-10 09:28:59,184 - INFO - Validation - OA: 0.9953, AA: 0.9940, Kappa: 0.9941
+2025-07-10 09:29:12,733 - INFO - Epoch 10/100:
+2025-07-10 09:29:12,733 - INFO - Training Loss: 0.0482, Accuracy: 0.9855
+2025-07-10 09:29:12,734 - INFO - Validation - OA: 0.9991, AA: 0.9986, Kappa: 0.9988
+2025-07-10 09:29:23,098 - INFO - Epoch 11/100:
+2025-07-10 09:29:23,098 - INFO - Training Loss: 0.0230, Accuracy: 0.9925
+2025-07-10 09:29:23,098 - INFO - Validation - OA: 0.9991, AA: 0.9990, Kappa: 0.9988
+2025-07-10 09:29:33,487 - INFO - Epoch 12/100:
+2025-07-10 09:29:33,487 - INFO - Training Loss: 0.0162, Accuracy: 0.9965
+2025-07-10 09:29:33,488 - INFO - Validation - OA: 0.9972, AA: 0.9983, Kappa: 0.9965
+2025-07-10 09:29:43,982 - INFO - Epoch 13/100:
+2025-07-10 09:29:43,982 - INFO - Training Loss: 0.0333, Accuracy: 0.9890
+2025-07-10 09:29:43,982 - INFO - Validation - OA: 0.9944, AA: 0.9938, Kappa: 0.9930
+2025-07-10 09:29:54,335 - INFO - Epoch 14/100:
+2025-07-10 09:29:54,335 - INFO - Training Loss: 0.0380, Accuracy: 0.9874
+2025-07-10 09:29:54,335 - INFO - Validation - OA: 0.9972, AA: 0.9964, Kappa: 0.9965
+2025-07-10 09:30:04,681 - INFO - Epoch 15/100:
+2025-07-10 09:30:04,682 - INFO - Training Loss: 0.0223, Accuracy: 0.9944
+2025-07-10 09:30:04,682 - INFO - Validation - OA: 0.9664, AA: 0.9683, Kappa: 0.9580
+2025-07-10 09:30:15,026 - INFO - Epoch 16/100:
+2025-07-10 09:30:15,026 - INFO - Training Loss: 0.0208, Accuracy: 0.9937
+2025-07-10 09:30:15,026 - INFO - Validation - OA: 0.9991, AA: 0.9994, Kappa: 0.9988
+2025-07-10 09:30:25,373 - INFO - Epoch 17/100:
+2025-07-10 09:30:25,373 - INFO - Training Loss: 0.0084, Accuracy: 0.9986
+2025-07-10 09:30:25,373 - INFO - Validation - OA: 0.9981, AA: 0.9989, Kappa: 0.9977
+2025-07-10 09:30:35,723 - INFO - Epoch 18/100:
+2025-07-10 09:30:35,724 - INFO - Training Loss: 0.0074, Accuracy: 0.9991
+2025-07-10 09:30:35,724 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:30:35,729 - INFO - Best model saved!
+2025-07-10 09:30:46,078 - INFO - Epoch 19/100:
+2025-07-10 09:30:46,078 - INFO - Training Loss: 0.0542, Accuracy: 0.9804
+2025-07-10 09:30:46,078 - INFO - Validation - OA: 0.9813, AA: 0.9752, Kappa: 0.9765
+2025-07-10 09:30:56,428 - INFO - Epoch 20/100:
+2025-07-10 09:30:56,428 - INFO - Training Loss: 0.0392, Accuracy: 0.9878
+2025-07-10 09:30:56,429 - INFO - Validation - OA: 0.9907, AA: 0.9905, Kappa: 0.9883
+2025-07-10 09:31:06,808 - INFO - Epoch 21/100:
+2025-07-10 09:31:06,808 - INFO - Training Loss: 0.0187, Accuracy: 0.9942
+2025-07-10 09:31:06,808 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:31:17,220 - INFO - Epoch 22/100:
+2025-07-10 09:31:17,221 - INFO - Training Loss: 0.0121, Accuracy: 0.9974
+2025-07-10 09:31:17,221 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:31:27,616 - INFO - Epoch 23/100:
+2025-07-10 09:31:27,616 - INFO - Training Loss: 0.1267, Accuracy: 0.9577
+2025-07-10 09:31:27,616 - INFO - Validation - OA: 0.9841, AA: 0.9831, Kappa: 0.9801
+2025-07-10 09:31:37,992 - INFO - Epoch 24/100:
+2025-07-10 09:31:37,992 - INFO - Training Loss: 0.0267, Accuracy: 0.9930
+2025-07-10 09:31:37,992 - INFO - Validation - OA: 0.9963, AA: 0.9957, Kappa: 0.9953
+2025-07-10 09:31:50,540 - INFO - Epoch 25/100:
+2025-07-10 09:31:50,540 - INFO - Training Loss: 0.0146, Accuracy: 0.9967
+2025-07-10 09:31:50,540 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:32:04,795 - INFO - Epoch 26/100:
+2025-07-10 09:32:04,795 - INFO - Training Loss: 0.0104, Accuracy: 0.9977
+2025-07-10 09:32:04,795 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:32:15,160 - INFO - Epoch 27/100:
+2025-07-10 09:32:15,161 - INFO - Training Loss: 0.0084, Accuracy: 0.9986
+2025-07-10 09:32:15,161 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:32:25,517 - INFO - Epoch 28/100:
+2025-07-10 09:32:25,518 - INFO - Training Loss: 0.0066, Accuracy: 0.9986
+2025-07-10 09:32:25,518 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:32:35,890 - INFO - Epoch 29/100:
+2025-07-10 09:32:35,890 - INFO - Training Loss: 0.0060, Accuracy: 0.9991
+2025-07-10 09:32:35,891 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:32:46,266 - INFO - Epoch 30/100:
+2025-07-10 09:32:46,266 - INFO - Training Loss: 0.0050, Accuracy: 0.9995
+2025-07-10 09:32:46,267 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:32:56,644 - INFO - Epoch 31/100:
+2025-07-10 09:32:56,645 - INFO - Training Loss: 0.0242, Accuracy: 0.9928
+2025-07-10 09:32:56,645 - INFO - Validation - OA: 0.9673, AA: 0.9713, Kappa: 0.9591
+2025-07-10 09:33:07,025 - INFO - Epoch 32/100:
+2025-07-10 09:33:07,025 - INFO - Training Loss: 0.0655, Accuracy: 0.9762
+2025-07-10 09:33:07,025 - INFO - Validation - OA: 0.9963, AA: 0.9956, Kappa: 0.9953
+2025-07-10 09:33:17,403 - INFO - Epoch 33/100:
+2025-07-10 09:33:17,403 - INFO - Training Loss: 0.0144, Accuracy: 0.9965
+2025-07-10 09:33:17,403 - INFO - Validation - OA: 0.9981, AA: 0.9981, Kappa: 0.9977
+2025-07-10 09:33:27,780 - INFO - Epoch 34/100:
+2025-07-10 09:33:27,780 - INFO - Training Loss: 0.0124, Accuracy: 0.9960
+2025-07-10 09:33:27,780 - INFO - Validation - OA: 0.9981, AA: 0.9975, Kappa: 0.9977
+2025-07-10 09:33:38,156 - INFO - Epoch 35/100:
+2025-07-10 09:33:38,156 - INFO - Training Loss: 0.0077, Accuracy: 0.9977
+2025-07-10 09:33:38,156 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:33:48,526 - INFO - Epoch 36/100:
+2025-07-10 09:33:48,527 - INFO - Training Loss: 0.0077, Accuracy: 0.9984
+2025-07-10 09:33:48,527 - INFO - Validation - OA: 0.9991, AA: 0.9994, Kappa: 0.9988
+2025-07-10 09:33:58,897 - INFO - Epoch 37/100:
+2025-07-10 09:33:58,897 - INFO - Training Loss: 0.0037, Accuracy: 0.9995
+2025-07-10 09:33:58,897 - INFO - Validation - OA: 0.9944, AA: 0.9963, Kappa: 0.9930
+2025-07-10 09:34:09,279 - INFO - Epoch 38/100:
+2025-07-10 09:34:09,280 - INFO - Training Loss: 0.0093, Accuracy: 0.9970
+2025-07-10 09:34:09,280 - INFO - Validation - OA: 0.9944, AA: 0.9932, Kappa: 0.9930
+2025-07-10 09:34:19,666 - INFO - Epoch 39/100:
+2025-07-10 09:34:19,666 - INFO - Training Loss: 0.0069, Accuracy: 0.9988
+2025-07-10 09:34:19,667 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:34:30,053 - INFO - Epoch 40/100:
+2025-07-10 09:34:30,053 - INFO - Training Loss: 0.0033, Accuracy: 0.9991
+2025-07-10 09:34:30,053 - INFO - Validation - OA: 0.9981, AA: 0.9988, Kappa: 0.9977
+2025-07-10 09:34:40,442 - INFO - Epoch 41/100:
+2025-07-10 09:34:40,442 - INFO - Training Loss: 0.0020, Accuracy: 1.0000
+2025-07-10 09:34:40,442 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:34:50,824 - INFO - Epoch 42/100:
+2025-07-10 09:34:50,824 - INFO - Training Loss: 0.0017, Accuracy: 1.0000
+2025-07-10 09:34:50,824 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:35:01,225 - INFO - Epoch 43/100:
+2025-07-10 09:35:01,225 - INFO - Training Loss: 0.0067, Accuracy: 0.9979
+2025-07-10 09:35:01,225 - INFO - Validation - OA: 0.9944, AA: 0.9936, Kappa: 0.9930
+2025-07-10 09:35:11,635 - INFO - Epoch 44/100:
+2025-07-10 09:35:11,636 - INFO - Training Loss: 0.0871, Accuracy: 0.9748
+2025-07-10 09:35:11,636 - INFO - Validation - OA: 0.9822, AA: 0.9791, Kappa: 0.9778
+2025-07-10 09:35:22,066 - INFO - Epoch 45/100:
+2025-07-10 09:35:22,066 - INFO - Training Loss: 0.0241, Accuracy: 0.9916
+2025-07-10 09:35:22,067 - INFO - Validation - OA: 0.9981, AA: 0.9988, Kappa: 0.9977
+2025-07-10 09:35:32,512 - INFO - Epoch 46/100:
+2025-07-10 09:35:32,512 - INFO - Training Loss: 0.0095, Accuracy: 0.9977
+2025-07-10 09:35:32,512 - INFO - Validation - OA: 0.9991, AA: 0.9986, Kappa: 0.9988
+2025-07-10 09:35:42,963 - INFO - Epoch 47/100:
+2025-07-10 09:35:42,963 - INFO - Training Loss: 0.0090, Accuracy: 0.9977
+2025-07-10 09:35:42,963 - INFO - Validation - OA: 0.9981, AA: 0.9979, Kappa: 0.9977
+2025-07-10 09:35:53,420 - INFO - Epoch 48/100:
+2025-07-10 09:35:53,420 - INFO - Training Loss: 0.0114, Accuracy: 0.9977
+2025-07-10 09:35:53,420 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:36:03,889 - INFO - Epoch 49/100:
+2025-07-10 09:36:03,890 - INFO - Training Loss: 0.0054, Accuracy: 0.9986
+2025-07-10 09:36:03,890 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:36:14,334 - INFO - Epoch 50/100:
+2025-07-10 09:36:14,334 - INFO - Training Loss: 0.0028, Accuracy: 1.0000
+2025-07-10 09:36:14,334 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:36:24,793 - INFO - Epoch 51/100:
+2025-07-10 09:36:24,793 - INFO - Training Loss: 0.0027, Accuracy: 0.9995
+2025-07-10 09:36:24,793 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:36:35,261 - INFO - Epoch 52/100:
+2025-07-10 09:36:35,262 - INFO - Training Loss: 0.0047, Accuracy: 0.9979
+2025-07-10 09:36:35,262 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:36:45,709 - INFO - Epoch 53/100:
+2025-07-10 09:36:45,710 - INFO - Training Loss: 0.0043, Accuracy: 0.9988
+2025-07-10 09:36:45,710 - INFO - Validation - OA: 0.9991, AA: 0.9994, Kappa: 0.9988
+2025-07-10 09:36:56,163 - INFO - Epoch 54/100:
+2025-07-10 09:36:56,163 - INFO - Training Loss: 0.0100, Accuracy: 0.9956
+2025-07-10 09:36:56,164 - INFO - Validation - OA: 0.9869, AA: 0.9874, Kappa: 0.9836
+2025-07-10 09:37:06,609 - INFO - Epoch 55/100:
+2025-07-10 09:37:06,609 - INFO - Training Loss: 0.0165, Accuracy: 0.9951
+2025-07-10 09:37:06,610 - INFO - Validation - OA: 0.9991, AA: 0.9990, Kappa: 0.9988
+2025-07-10 09:37:17,071 - INFO - Epoch 56/100:
+2025-07-10 09:37:17,071 - INFO - Training Loss: 0.0155, Accuracy: 0.9956
+2025-07-10 09:37:17,071 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:37:27,547 - INFO - Epoch 57/100:
+2025-07-10 09:37:27,547 - INFO - Training Loss: 0.0040, Accuracy: 0.9993
+2025-07-10 09:37:27,547 - INFO - Validation - OA: 0.9981, AA: 0.9979, Kappa: 0.9977
+2025-07-10 09:37:38,047 - INFO - Epoch 58/100:
+2025-07-10 09:37:38,047 - INFO - Training Loss: 0.0074, Accuracy: 0.9977
+2025-07-10 09:37:38,047 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:37:48,547 - INFO - Epoch 59/100:
+2025-07-10 09:37:48,547 - INFO - Training Loss: 0.0057, Accuracy: 0.9984
+2025-07-10 09:37:48,547 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:37:59,071 - INFO - Epoch 60/100:
+2025-07-10 09:37:59,071 - INFO - Training Loss: 0.0055, Accuracy: 0.9981
+2025-07-10 09:37:59,071 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:38:09,591 - INFO - Epoch 61/100:
+2025-07-10 09:38:09,591 - INFO - Training Loss: 0.0102, Accuracy: 0.9963
+2025-07-10 09:38:09,591 - INFO - Validation - OA: 0.9981, AA: 0.9980, Kappa: 0.9977
+2025-07-10 09:38:20,117 - INFO - Epoch 62/100:
+2025-07-10 09:38:20,117 - INFO - Training Loss: 0.0088, Accuracy: 0.9963
+2025-07-10 09:38:20,117 - INFO - Validation - OA: 0.9963, AA: 0.9975, Kappa: 0.9953
+2025-07-10 09:38:30,642 - INFO - Epoch 63/100:
+2025-07-10 09:38:30,643 - INFO - Training Loss: 0.0022, Accuracy: 0.9998
+2025-07-10 09:38:30,643 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:38:41,204 - INFO - Epoch 64/100:
+2025-07-10 09:38:41,204 - INFO - Training Loss: 0.0013, Accuracy: 1.0000
+2025-07-10 09:38:41,205 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:38:51,741 - INFO - Epoch 65/100:
+2025-07-10 09:38:51,741 - INFO - Training Loss: 0.0014, Accuracy: 1.0000
+2025-07-10 09:38:51,742 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:39:02,266 - INFO - Epoch 66/100:
+2025-07-10 09:39:02,267 - INFO - Training Loss: 0.0028, Accuracy: 0.9993
+2025-07-10 09:39:02,267 - INFO - Validation - OA: 0.9925, AA: 0.9922, Kappa: 0.9906
+2025-07-10 09:39:12,805 - INFO - Epoch 67/100:
+2025-07-10 09:39:12,805 - INFO - Training Loss: 0.0502, Accuracy: 0.9839
+2025-07-10 09:39:12,805 - INFO - Validation - OA: 0.9935, AA: 0.9920, Kappa: 0.9918
+2025-07-10 09:39:23,328 - INFO - Epoch 68/100:
+2025-07-10 09:39:23,328 - INFO - Training Loss: 0.0226, Accuracy: 0.9944
+2025-07-10 09:39:23,328 - INFO - Validation - OA: 0.9991, AA: 0.9994, Kappa: 0.9988
+2025-07-10 09:39:33,848 - INFO - Epoch 69/100:
+2025-07-10 09:39:33,848 - INFO - Training Loss: 0.0086, Accuracy: 0.9977
+2025-07-10 09:39:33,848 - INFO - Validation - OA: 0.9991, AA: 0.9994, Kappa: 0.9988
+2025-07-10 09:39:44,381 - INFO - Epoch 70/100:
+2025-07-10 09:39:44,381 - INFO - Training Loss: 0.0153, Accuracy: 0.9939
+2025-07-10 09:39:44,381 - INFO - Validation - OA: 0.9944, AA: 0.9946, Kappa: 0.9930
+2025-07-10 09:39:54,911 - INFO - Epoch 71/100:
+2025-07-10 09:39:54,911 - INFO - Training Loss: 0.0236, Accuracy: 0.9921
+2025-07-10 09:39:54,911 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:40:05,432 - INFO - Epoch 72/100:
+2025-07-10 09:40:05,432 - INFO - Training Loss: 0.0063, Accuracy: 0.9979
+2025-07-10 09:40:05,433 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:40:15,954 - INFO - Epoch 73/100:
+2025-07-10 09:40:15,954 - INFO - Training Loss: 0.0033, Accuracy: 0.9991
+2025-07-10 09:40:15,955 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:40:26,477 - INFO - Epoch 74/100:
+2025-07-10 09:40:26,478 - INFO - Training Loss: 0.0019, Accuracy: 1.0000
+2025-07-10 09:40:26,478 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:40:37,007 - INFO - Epoch 75/100:
+2025-07-10 09:40:37,007 - INFO - Training Loss: 0.0028, Accuracy: 0.9988
+2025-07-10 09:40:37,007 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:40:47,526 - INFO - Epoch 76/100:
+2025-07-10 09:40:47,527 - INFO - Training Loss: 0.0019, Accuracy: 0.9998
+2025-07-10 09:40:47,527 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:40:58,056 - INFO - Epoch 77/100:
+2025-07-10 09:40:58,056 - INFO - Training Loss: 0.0010, Accuracy: 1.0000
+2025-07-10 09:40:58,056 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:41:08,597 - INFO - Epoch 78/100:
+2025-07-10 09:41:08,597 - INFO - Training Loss: 0.0007, Accuracy: 1.0000
+2025-07-10 09:41:08,597 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:41:19,136 - INFO - Epoch 79/100:
+2025-07-10 09:41:19,136 - INFO - Training Loss: 0.0009, Accuracy: 1.0000
+2025-07-10 09:41:19,137 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:41:29,657 - INFO - Epoch 80/100:
+2025-07-10 09:41:29,657 - INFO - Training Loss: 0.0013, Accuracy: 1.0000
+2025-07-10 09:41:29,657 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:41:40,181 - INFO - Epoch 81/100:
+2025-07-10 09:41:40,181 - INFO - Training Loss: 0.0022, Accuracy: 0.9998
+2025-07-10 09:41:40,181 - INFO - Validation - OA: 0.9991, AA: 0.9990, Kappa: 0.9988
+2025-07-10 09:41:50,714 - INFO - Epoch 82/100:
+2025-07-10 09:41:50,714 - INFO - Training Loss: 0.0082, Accuracy: 0.9977
+2025-07-10 09:41:50,715 - INFO - Validation - OA: 0.9860, AA: 0.9903, Kappa: 0.9825
+2025-07-10 09:42:01,249 - INFO - Epoch 83/100:
+2025-07-10 09:42:01,250 - INFO - Training Loss: 0.0474, Accuracy: 0.9853
+2025-07-10 09:42:01,250 - INFO - Validation - OA: 0.8009, AA: 0.8107, Kappa: 0.7503
+2025-07-10 09:42:11,780 - INFO - Epoch 84/100:
+2025-07-10 09:42:11,781 - INFO - Training Loss: 0.0560, Accuracy: 0.9853
+2025-07-10 09:42:11,781 - INFO - Validation - OA: 0.9991, AA: 0.9988, Kappa: 0.9988
+2025-07-10 09:42:22,312 - INFO - Epoch 85/100:
+2025-07-10 09:42:22,312 - INFO - Training Loss: 0.0125, Accuracy: 0.9967
+2025-07-10 09:42:22,312 - INFO - Validation - OA: 0.9981, AA: 0.9973, Kappa: 0.9977
+2025-07-10 09:42:32,868 - INFO - Epoch 86/100:
+2025-07-10 09:42:32,868 - INFO - Training Loss: 0.0056, Accuracy: 0.9981
+2025-07-10 09:42:32,868 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:42:43,428 - INFO - Epoch 87/100:
+2025-07-10 09:42:43,429 - INFO - Training Loss: 0.0050, Accuracy: 0.9986
+2025-07-10 09:42:43,429 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:42:53,979 - INFO - Epoch 88/100:
+2025-07-10 09:42:53,979 - INFO - Training Loss: 0.0044, Accuracy: 0.9991
+2025-07-10 09:42:53,979 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:43:04,529 - INFO - Epoch 89/100:
+2025-07-10 09:43:04,530 - INFO - Training Loss: 0.0023, Accuracy: 1.0000
+2025-07-10 09:43:04,530 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:43:15,077 - INFO - Epoch 90/100:
+2025-07-10 09:43:15,077 - INFO - Training Loss: 0.0057, Accuracy: 0.9988
+2025-07-10 09:43:15,077 - INFO - Validation - OA: 0.9981, AA: 0.9988, Kappa: 0.9977
+2025-07-10 09:43:25,637 - INFO - Epoch 91/100:
+2025-07-10 09:43:25,637 - INFO - Training Loss: 0.0016, Accuracy: 1.0000
+2025-07-10 09:43:25,637 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:43:36,187 - INFO - Epoch 92/100:
+2025-07-10 09:43:36,187 - INFO - Training Loss: 0.0011, Accuracy: 1.0000
+2025-07-10 09:43:36,187 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:43:46,736 - INFO - Epoch 93/100:
+2025-07-10 09:43:46,737 - INFO - Training Loss: 0.0014, Accuracy: 0.9995
+2025-07-10 09:43:46,737 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:43:57,287 - INFO - Epoch 94/100:
+2025-07-10 09:43:57,287 - INFO - Training Loss: 0.0014, Accuracy: 0.9998
+2025-07-10 09:43:57,287 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:44:07,815 - INFO - Epoch 95/100:
+2025-07-10 09:44:07,815 - INFO - Training Loss: 0.0007, Accuracy: 1.0000
+2025-07-10 09:44:07,816 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:44:18,309 - INFO - Epoch 96/100:
+2025-07-10 09:44:18,310 - INFO - Training Loss: 0.0005, Accuracy: 1.0000
+2025-07-10 09:44:18,310 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:44:28,783 - INFO - Epoch 97/100:
+2025-07-10 09:44:28,784 - INFO - Training Loss: 0.0006, Accuracy: 1.0000
+2025-07-10 09:44:28,784 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:44:39,226 - INFO - Epoch 98/100:
+2025-07-10 09:44:39,227 - INFO - Training Loss: 0.0006, Accuracy: 1.0000
+2025-07-10 09:44:39,227 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:44:49,669 - INFO - Epoch 99/100:
+2025-07-10 09:44:49,669 - INFO - Training Loss: 0.0007, Accuracy: 1.0000
+2025-07-10 09:44:49,669 - INFO - Validation - OA: 1.0000, AA: 1.0000, Kappa: 1.0000
+2025-07-10 09:45:00,100 - INFO - Epoch 100/100:
+2025-07-10 09:45:00,101 - INFO - Training Loss: 0.0712, Accuracy: 0.9808
+2025-07-10 09:45:00,101 - INFO - Validation - OA: 0.9710, AA: 0.9600, Kappa: 0.9636
+2025-07-10 09:45:01,025 - INFO - Training completed!
+2025-07-10 09:45:01,025 - INFO - Best validation accuracy: 1.0000
