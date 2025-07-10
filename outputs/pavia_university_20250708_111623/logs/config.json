@@ -1,0 +1,1 @@
+{"dataset":"pavia_university","batch_size":32,"num_epochs":100,"learning_rate":0.001,"patch_size":15,"pca_components":30,"model_dir":"outputs\/pavia_university_training\/","device":"cuda"}
