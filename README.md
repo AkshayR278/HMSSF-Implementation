@@ -380,7 +380,7 @@ python robustness_plot.py --metrics_dir outputs/indian_pines_20250703_102447/met
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is private and must not be reproduced elsewhere
 
 ---
 
